@@ -1,0 +1,460 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+// header
+
+nav {
+  position: relative;
+
+  .img {
+    width: 138px;
+    height: 33px;
+  }
+
+  .link-box {
+    line-height: 59px;
+  }
+
+  .hover-navLi:hover ul.menu {
+    display: block !important;
+  }
+
+  .nav-ul {
+    opacity: 0.8;
+
+    .nav-li {
+      font-size: 13px;
+      margin: 0 16px;
+      a {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+    }
+  }
+
+  ul.menu {
+    background: #292929;
+    list-style-type: none;
+    font-weight: 600;
+    top: 59px;
+    padding: 20px 20px;
+    line-height: 20px;
+
+    h6 {
+      font-size: 11px;
+    }
+
+    li {
+      padding: 6px 24px;
+
+      a {
+        opacity: 0.5;
+        font-size: 11px;
+        color: #fff;
+      }
+    }
+  }
+
+  .shopping {
+    right: 20px;
+    img {
+      width: 25%;
+      padding-right: 5%;
+      padding-bottom: 5%;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// home section
+
+section#home {
+  background-image: url(../img/fitness3.jpg);
+  height: 86vh;
+  background-position: center;
+  background-size: cover;
+
+  div.text-home {
+    font-family: $primary-font-family;
+
+    h1 {
+      font-size: 56px;
+      font-style: italic;
+      margin: 0;
+
+      @media (max-width: 767px) {
+        font-size: 32px;
+      }
+    }
+
+    h5 {
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+
+      @media (max-width: 767px) {
+        font-size: 13px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      line-height: 28px;
+      font-family: $success-font-family;
+
+      @media (max-width: 767px) {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+// primary section
+
+section#primary {
+  background-color: $primary-color;
+  padding: 96px 0;
+
+  div.text-left {
+    font-style: italic;
+
+    h1 {
+      font-family: $primary-font-family;
+      margin-bottom: 24px;
+      font-weight: 600;
+      font-size: 56px;
+      text-align: end;
+
+      @media (max-width: 767px) {
+        font-size: 32px;
+        text-align: center;
+
+        br {
+          display: none;
+        }
+      }
+    }
+    h5 {
+      text-align: end;
+      font-family: $primary-font-family;
+      opacity: 0.75;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 2px;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+  div.text-right {
+    p {
+      text-align: left;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 24px;
+      font-family: $success-font-family;
+
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
+
+    .image {
+      text-align: left;
+
+      img {
+        width: 121px;
+      }
+    }
+  }
+}
+
+// training section
+
+section#training {
+  div.training-right-text {
+    padding: 8% 18%;
+
+    h2 {
+      font-style: italic;
+      font-family: $primary-font-family;
+      margin-bottom: 24px;
+      font-size: 40px;
+      padding-right: 50%;
+
+      @media (max-width: 767px) {
+        padding-right: 0;
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 13px;
+      font-family: $success-font-family;
+      margin-bottom: 24px;
+      line-height: 24px;
+      color: #666;
+      padding-right: 13%;
+
+      @media (max-width: 767px) {
+        padding-right: 0;
+        font-size: 12px;
+      }
+    }
+
+    h6 {
+      font-size: 12px;
+      font-family: $primary-font-family;
+      letter-spacing: 2px;
+      font-weight: 700;
+      line-height: 22px;
+    }
+
+    a {
+      @include button(32px 0);
+    }
+
+    @media (max-width: 767px) {
+      padding: 8% 0;
+    }
+  }
+
+  div.training-left-text {
+    @extend div.training-right-text;
+    text-align: end;
+
+    h2,
+    p {
+      padding: 0;
+    }
+  }
+}
+
+// navs section
+
+section#navs {
+  h1 {
+    color: #cfcfcf;
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+  }
+
+  a.active {
+    background-color: $primary-color;
+    border-radius: 0;
+  }
+
+  .for-width {
+    background-color: #f5f5f5;
+    width: 250px;
+  }
+
+  h6 {
+    font-size: 12px;
+    font-family: $primary-font-family;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-family: $primary-font-family;
+    margin-bottom: 24px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 13px;
+    font-family: $success-font-family;
+  }
+
+  .link {
+    @include button(24px 0);
+  }
+
+  .day {
+    margin-bottom: 50px;
+  }
+}
+
+// image section
+
+section#image {
+  background-image: url(../img/fitness4.jpg);
+  padding: 180px 0;
+  background-position: center center;
+  background-size: cover;
+
+  h4 {
+    font-weight: 600;
+    font-family: $primary-font-family;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  h6 {
+    font-size: 12px;
+    font-family: $primary-font-family;
+    letter-spacing: 2px;
+    font-weight: 700;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+}
+
+// instagram section
+
+section#instagram {
+  padding: 96px 0 64px;
+
+  .text-instagram {
+    margin-bottom: 130px;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 24px;
+      font-family: $primary-font-family;
+      font-weight: 600;
+
+      @media (max-width: 767px) {
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-family: $success-font-family;
+      margin-bottom: 20px;
+      font-weight: 400;
+      line-height: 28px;
+
+      @media (max-width: 767px) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .link-instagram a {
+    @include button(10px 0);
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+// insights section
+
+section#insights {
+  padding: 96px 0;
+
+  h1 {
+    opacity: 0.25;
+    font-family: $primary-font-family;
+    font-weight: 600;
+    padding-bottom: 70px;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+  .insights-link {
+    @include button(100px 0 0);
+  }
+
+  .bg-color {
+    background-color: #f8f8f8;
+  }
+
+  div.card {
+    border: 0;
+
+    @media (max-width: 767px) {
+      width: 100% !important;
+    }
+
+    p {
+      color: #666;
+      font-size: 13px;
+      line-height: 24px;
+    }
+
+    h5 {
+      font-family: $primary-font-family;
+      font-weight: 600;
+      font-size: 24px;
+
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// footer
+
+footer {
+  background-color: $primary-color;
+  padding: 96px 0;
+
+  .col-md-2 i {
+    font-size: 80px;
+    line-height: 130px;
+
+    @media (max-width: 767px) {
+      font-size: 40px;
+      line-height: 90px;
+    }
+  }
+
+  h1 {
+    font-size: 56px;
+    font-family: $primary-font-family;
+    margin-bottom: 24px;
+    font-weight: 600;
+    text-align: right;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      text-align: center;
+      margin: 0;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  p {
+    font-family: $success-font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+    @media (max-width: 767px) {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    font-family: $primary-font-family;
+    line-height: 32px;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
