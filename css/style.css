@@ -1,34 +1,27 @@
 nav {
   position: relative;
 }
-
 nav .img {
   width: 138px;
   height: 33px;
 }
-
 nav .link-box {
   line-height: 59px;
 }
-
 nav .hover-navLi:hover ul.menu {
   display: block !important;
 }
-
 nav .nav-ul {
   opacity: 0.8;
 }
-
 nav .nav-ul .nav-li {
   font-size: 13px;
   margin: 0 16px;
 }
-
 nav .nav-ul .nav-li a {
   padding-bottom: 0;
   padding-top: 0;
 }
-
 nav ul.menu {
   background: #292929;
   list-style-type: none;
@@ -37,31 +30,25 @@ nav ul.menu {
   padding: 20px 20px;
   line-height: 20px;
 }
-
 nav ul.menu h6 {
   font-size: 11px;
 }
-
 nav ul.menu li {
   padding: 6px 24px;
 }
-
 nav ul.menu li a {
   opacity: 0.5;
   font-size: 11px;
   color: #fff;
 }
-
 nav .shopping {
   right: 20px;
 }
-
 nav .shopping img {
   width: 25%;
   padding-right: 5%;
   padding-bottom: 5%;
 }
-
 nav .shopping a:hover {
   text-decoration: none;
 }
@@ -72,41 +59,34 @@ section#home {
   background-position: center;
   background-size: cover;
 }
-
 section#home div.text-home {
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 section#home div.text-home h1 {
   font-size: 56px;
   font-style: italic;
   margin: 0;
 }
-
 @media (max-width: 767px) {
   section#home div.text-home h1 {
     font-size: 32px;
   }
 }
-
 section#home div.text-home h5 {
   font-size: 16px;
   letter-spacing: 2px;
   margin-bottom: 32px;
 }
-
 @media (max-width: 767px) {
   section#home div.text-home h5 {
     font-size: 13px;
   }
 }
-
 section#home div.text-home p {
   font-weight: 400;
   line-height: 28px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 @media (max-width: 767px) {
   section#home div.text-home p {
     font-size: 13px;
@@ -117,11 +97,9 @@ section#primary {
   background-color: #fc4f4f;
   padding: 96px 0;
 }
-
 section#primary div.text-left {
   font-style: italic;
 }
-
 section#primary div.text-left h1 {
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
@@ -129,7 +107,6 @@ section#primary div.text-left h1 {
   font-size: 56px;
   text-align: end;
 }
-
 @media (max-width: 767px) {
   section#primary div.text-left h1 {
     font-size: 32px;
@@ -139,7 +116,6 @@ section#primary div.text-left h1 {
     display: none;
   }
 }
-
 section#primary div.text-left h5 {
   text-align: end;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -148,14 +124,12 @@ section#primary div.text-left h5 {
   line-height: 23px;
   letter-spacing: 2px;
 }
-
 @media (max-width: 767px) {
   section#primary div.text-left h5 {
     font-size: 14px;
     text-align: center;
   }
 }
-
 section#primary div.text-right p {
   text-align: left;
   font-weight: 400;
@@ -163,65 +137,50 @@ section#primary div.text-right p {
   line-height: 24px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 @media (max-width: 767px) {
   section#primary div.text-right p {
     font-size: 12px;
   }
 }
-
 section#primary div.text-right .image {
   text-align: left;
 }
-
 section#primary div.text-right .image img {
   width: 121px;
 }
 
-section#training div.training-right-text, section#training div.training-left-text {
-  padding: 8% 18%;
-}
-
-section#training div.training-right-text h2, section#training div.training-left-text h2 {
+section#training .training-right-text h2, section#training div.training-left-text h2 {
   font-style: italic;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
   font-size: 40px;
-  padding-right: 50%;
 }
-
 @media (max-width: 767px) {
-  section#training div.training-right-text h2, section#training div.training-left-text h2 {
-    padding-right: 0;
+  section#training .training-right-text h2, section#training div.training-left-text h2 {
     font-size: 32px;
   }
 }
-
-section#training div.training-right-text p, section#training div.training-left-text p {
+section#training .training-right-text p, section#training div.training-left-text p {
+  max-width: 500px;
   font-size: 13px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
   line-height: 24px;
   color: #666;
-  padding-right: 13%;
 }
-
 @media (max-width: 767px) {
-  section#training div.training-right-text p, section#training div.training-left-text p {
-    padding-right: 0;
+  section#training .training-right-text p, section#training div.training-left-text p {
     font-size: 12px;
   }
 }
-
-section#training div.training-right-text h6, section#training div.training-left-text h6 {
+section#training .training-right-text h6, section#training div.training-left-text h6 {
   font-size: 12px;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
   font-weight: 700;
   line-height: 22px;
 }
-
-section#training div.training-right-text a, section#training div.training-left-text a {
+section#training .training-right-text a, section#training div.training-left-text a {
   font-size: 12px;
   height: 50px;
   line-height: 46px;
@@ -234,22 +193,18 @@ section#training div.training-right-text a, section#training div.training-left-t
   padding: 0 26px;
   margin: 32px 0;
 }
-
-section#training div.training-right-text a:hover, section#training div.training-left-text a:hover {
+section#training .training-right-text a:hover, section#training div.training-left-text a:hover {
   background-color: #fc4f4f;
   color: white;
 }
-
-@media (max-width: 767px) {
-  section#training div.training-right-text, section#training div.training-left-text {
+@media (max-width: 991px) {
+  section#training .training-right-text, section#training div.training-left-text {
     padding: 8% 0;
   }
 }
-
 section#training div.training-left-text {
   text-align: end;
 }
-
 section#training div.training-left-text h2,
 section#training div.training-left-text p {
   padding: 0;
@@ -258,30 +213,25 @@ section#training div.training-left-text p {
 section#navs h1 {
   color: #cfcfcf;
 }
-
 @media (max-width: 767px) {
   section#navs h1 {
     font-size: 32px;
   }
 }
-
 section#navs a.active {
   background-color: #fc4f4f;
   border-radius: 0;
 }
-
 section#navs .for-width {
   background-color: #f5f5f5;
   width: 250px;
 }
-
 section#navs h6 {
   font-size: 12px;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
   font-weight: 700;
 }
-
 section#navs h4 {
   font-size: 24px;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -289,12 +239,10 @@ section#navs h4 {
   line-height: 32px;
   font-weight: 300;
 }
-
 section#navs p {
   font-size: 13px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 section#navs .link {
   font-size: 12px;
   height: 50px;
@@ -308,12 +256,10 @@ section#navs .link {
   padding: 0 26px;
   margin: 24px 0;
 }
-
 section#navs .link:hover {
   background-color: #fc4f4f;
   color: white;
 }
-
 section#navs .day {
   margin-bottom: 50px;
 }
@@ -324,25 +270,21 @@ section#image {
   background-position: center center;
   background-size: cover;
 }
-
 section#image h4 {
   font-weight: 600;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 @media (max-width: 767px) {
   section#image h4 {
     font-size: 18px;
   }
 }
-
 section#image h6 {
   font-size: 12px;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
   font-weight: 700;
 }
-
 @media (max-width: 767px) {
   section#image h6 {
     font-size: 12px;
@@ -352,24 +294,20 @@ section#image h6 {
 section#instagram {
   padding: 96px 0 64px;
 }
-
 section#instagram .text-instagram {
   margin-bottom: 130px;
 }
-
 section#instagram .text-instagram h2 {
   font-size: 40px;
   margin-bottom: 24px;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
-
 @media (max-width: 767px) {
   section#instagram .text-instagram h2 {
     font-size: 32px;
   }
 }
-
 section#instagram .text-instagram p {
   font-size: 16px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -377,13 +315,11 @@ section#instagram .text-instagram p {
   font-weight: 400;
   line-height: 28px;
 }
-
 @media (max-width: 767px) {
   section#instagram .text-instagram p {
     font-size: 13px;
   }
 }
-
 section#instagram .link-instagram a {
   font-size: 12px;
   height: 50px;
@@ -399,7 +335,6 @@ section#instagram .link-instagram a {
   background-color: #fc4f4f;
   color: white;
 }
-
 section#instagram .link-instagram a:hover {
   background-color: #fc4f4f;
   color: white;
@@ -408,21 +343,18 @@ section#instagram .link-instagram a:hover {
 section#insights {
   padding: 96px 0;
 }
-
 section#insights h1 {
   opacity: 0.25;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   padding-bottom: 70px;
 }
-
 @media (max-width: 767px) {
   section#insights h1 {
     font-size: 32px;
     text-align: center;
   }
 }
-
 section#insights .insights-link {
   font-size: 12px;
   height: 50px;
@@ -436,38 +368,31 @@ section#insights .insights-link {
   padding: 0 26px;
   margin: 100px 0 0;
 }
-
 section#insights .insights-link:hover {
   background-color: #fc4f4f;
   color: white;
 }
-
 section#insights .bg-color {
   background-color: #f8f8f8;
 }
-
 section#insights div.card {
   border: 0;
 }
-
 @media (max-width: 767px) {
   section#insights div.card {
     width: 100% !important;
   }
 }
-
 section#insights div.card p {
   color: #666;
   font-size: 13px;
   line-height: 24px;
 }
-
 section#insights div.card h5 {
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
-
 @media (max-width: 767px) {
   section#insights div.card h5 {
     font-size: 18px;
@@ -478,19 +403,16 @@ footer {
   background-color: #fc4f4f;
   padding: 96px 0;
 }
-
 footer .col-md-2 i {
   font-size: 80px;
   line-height: 130px;
 }
-
 @media (max-width: 767px) {
   footer .col-md-2 i {
     font-size: 40px;
     line-height: 90px;
   }
 }
-
 footer h1 {
   font-size: 56px;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -498,7 +420,6 @@ footer h1 {
   font-weight: 600;
   text-align: right;
 }
-
 @media (max-width: 767px) {
   footer h1 {
     font-size: 32px;
@@ -509,7 +430,6 @@ footer h1 {
     display: none;
   }
 }
-
 footer p {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -517,24 +437,20 @@ footer p {
   line-height: 28px;
   text-align: left;
 }
-
 @media (max-width: 767px) {
   footer p {
     font-size: 13px;
     text-align: center;
   }
 }
-
 footer h4 {
   font-size: 24px;
   font-family: "Roboto Condensed", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 32px;
 }
-
 @media (max-width: 767px) {
   footer h4 {
     font-size: 18px;
     text-align: center;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

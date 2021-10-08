@@ -178,32 +178,28 @@ section#primary {
 // training section
 
 section#training {
-  div.training-right-text {
-    padding: 8% 18%;
-
+  .training-right-text {
+    
     h2 {
       font-style: italic;
       font-family: $primary-font-family;
       margin-bottom: 24px;
       font-size: 40px;
-      padding-right: 50%;
 
       @media (max-width: 767px) {
-        padding-right: 0;
         font-size: 32px;
       }
     }
 
     p {
+      max-width: 500px;
       font-size: 13px;
       font-family: $success-font-family;
       margin-bottom: 24px;
       line-height: 24px;
       color: #666;
-      padding-right: 13%;
 
       @media (max-width: 767px) {
-        padding-right: 0;
         font-size: 12px;
       }
     }
@@ -220,13 +216,13 @@ section#training {
       @include button(32px 0);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       padding: 8% 0;
     }
   }
 
   div.training-left-text {
-    @extend div.training-right-text;
+    @extend .training-right-text;
     text-align: end;
 
     h2,
